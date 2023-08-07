@@ -17,11 +17,11 @@ mycursor = mydb.cursor()
 # for x in mycursor:
 #   print(x)
 
-# sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
-# val = ("Suraj", "EKM")
-# mycursor.execute(sql, val)
+sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
+val = ("Rahul", "EKM")
+mycursor.execute(sql, val)
 
-# mydb.commit()
+mydb.commit()
 
 # print(mycursor.rowcount, "record inserted.")
 
