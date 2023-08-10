@@ -6,19 +6,15 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="root",
   password="",
-  database="mydatabase"
+  database="COLLEGEERP"
 )
 
 mycursor = mydb.cursor()
-data=cgi.FieldStorage()
-a=data.getvalue('e1')
-b=data.getvalue('p1')
 
-# mycursor.execute("CREATE DATABASE mydatabase")
-# mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
-# mycursor.execute("SHOW TABLES")
-# for x in mycursor:
-#   print(x)
+
+# mycursor.execute("CREATE DATABASE COLLEGEERP")
+mycursor.execute("CREATE TABLE STUDENT (name VARCHAR(255), email VARCHAR(255))")
+
 
 # sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
 # # name = input("Enter name : ")
